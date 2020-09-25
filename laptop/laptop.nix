@@ -84,11 +84,12 @@
   systemd.user.services = {
     sxhkd = {
       description = "Simple X Hotkey Daemon";
-      path = with pkgs; [
-        maim
-	xclip
+      path = [
+        "/run/current-system/sw/bin/"
+	"/home/heywoodlh/.local/bin/scripts"
       ];
       serviceConfig = {
+        User = "heywoodlh";
         ExecStart = "${pkgs.sxhkd}/bin/sxhkd";
       };
       enable = true;
