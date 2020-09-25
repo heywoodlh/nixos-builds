@@ -2,7 +2,6 @@
 
 {
 
-
   # Allow non-free applications to be installed
   nixpkgs.config.allowUnfree = true;
 
@@ -18,7 +17,6 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
   services.xserver.layout = "us";
-  # services.xserver.xkbOptions = "eurosign:e";
 
   # Enable touchpad support.
   services.xserver.libinput.enable = true;
@@ -63,5 +61,33 @@
 
   systemd.services.dnscrypt-proxy2.serviceConfig = {
     StateDirectory = "dnscrypt-proxy2";
+  };
+
+  users.users.heywoodlh = {
+      isNormalUser = true;
+      uid = 1000;
+      home = "/home/heywoodlh";
+      description = "Spencer Heywood";
+      extraGroups = [ "wheel" "networkmanager" "adbusers" ];
+      shell = pkgs.fish;
+  };
+
+  services = {
+    syncthing = {
+      enable = true;
+      user = "heywoodlh";
+      dataDir = "/home/heywoodlh/Sync";
+      configDir = "/home/heywoodlh/.config/syncthing";
+    };
+  };
+
+  systemd.user.services = {
+    sxhkd = {
+      description = "Simple X Hotkey Daemon";
+      serviceConfig = {
+        ExecStart = "${pkgs.sxhkd}/bin/sxhkd";
+      };
+      enable = true;
+    };
   };
 }
