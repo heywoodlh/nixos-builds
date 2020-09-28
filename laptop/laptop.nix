@@ -6,7 +6,7 @@
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
-     vim fish git gnupg firefox kitty python38 nodejs yarn rofi jq starship bitwarden-cli keyutils pass xclip syncthing albert bitwarden gnome3.gnome-tweak-tool gnome3.dconf-editor slack wireguard-tools busybox unzip signal-desktop go mosh bind weechat teams gcc gnumake chrome-gnome-shell ansible python38Packages.binwalk file patchelf nix-index autoPatchelfHook _1password-gui ungoogled-chromium wavebox python38Packages.pip maim sxhkd desktop-file-utils 
+     vim fish git gnupg firefox kitty python38 nodejs yarn rofi jq starship bitwarden-cli keyutils pass xclip syncthing albert bitwarden gnome3.gnome-tweak-tool gnome3.dconf-editor slack wireguard-tools busybox unzip signal-desktop go mosh bind weechat teams gcc gnumake chrome-gnome-shell ansible python38Packages.binwalk file patchelf nix-index autoPatchelfHook _1password-gui ungoogled-chromium wavebox python38Packages.pip maim sxhkd desktop-file-utils
   ];
 
   
@@ -14,16 +14,16 @@
   sound.enable = true;
   hardware.pulseaudio.enable = true;
 
-  # Enable the X11 windowing system.
-  services.xserver.enable = true;
-  services.xserver.layout = "us";
-
-  # Enable touchpad support.
-  services.xserver.libinput.enable = true;
-
-  # Enable GNOME
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome3.enable = true;
+  # Display server applications
+  services.xserver = {
+    enable = true;
+    layout = "us";
+    libinput = {
+      enable = true;
+    };
+    displayManager.gdm.enable = true;
+    desktopManager.gnome3.enable = true;
+  };
 
   programs.fish.enable = true;
 
@@ -81,18 +81,14 @@
     };
   };
 
-  systemd.user.services = {
-    sxhkd = {
-      description = "Simple X Hotkey Daemon";
-      documentation = [ "man:sxhkd(1)" ];
-      bindsTo = [ "display-manager.service" ];
-      after = [ "display-manager.service" ];
-      serviceConfig = {
-        ExecStart = "${pkgs.sxhkd}/bin/sxhkd";
-	ExecReload = "/run/current-system/sw/bin/kill -SIGUSR1 $MAINPID";
-      };
-      enable = true;
-      wantedBy = [ "graphical.target" ];
-    };
+  services.actkbd = {
+    enable = true;
+    bindings = [
+      { keys = [ 29 31 125 ]; events = [ "key" ]; command = "bwmenu"; }
+      { keys = [ 31 42 125 ]; events = [ "key" ]; command = "screenshot"; }
+      { keys = [ 57 125 ]; events = [ "key" ]; command = "albert show "; }
+      { keys = [ 20 29 56 ]; events = [ "key" ]; command = "kitty"; }
+    ];
   };
+
 }
