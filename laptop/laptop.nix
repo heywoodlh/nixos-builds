@@ -114,14 +114,4 @@
     };
   };
 
-  services.actkbd = {
-    enable = true;
-    bindings = [
-      { keys = [ 29 31 125 ]; events = [ "key" ]; command = "/home/heywoodlh/.local/bin/bwmenu"; }
-      { keys = [ 31 42 125 ]; events = [ "key" ]; command = "/home/heywoodlh/.local/bin/scripts/screenshot"; }
-      { keys = [ 57 125 ]; events = [ "key" ]; command = ''${pkgs.albert}/bin/albert show''; }
-      { keys = [ 20 29 56 ]; events = [ "key" ]; command = ''${pkgs.kitty}/bin/kitty''; }
-    ];
-  };
-
 }
