@@ -84,9 +84,12 @@
   systemd.user.services = {
     sxhkd = {
       description = "Simple X Hotkey Daemon";
+      documentation = [ "man:sxhkd(1)"; ]
+      bindsTo = [ "display-manager.service" ]
+      after = [ "display-manager.service" ]
       serviceConfig = {
-        User = "heywoodlh";
         ExecStart = "${pkgs.sxhkd}/bin/sxhkd";
+	ExecReload = "/run/current-system/sw/bin/kill -SIGUSR1 $MAINPID";
       };
       enable = true;
       wantedBy = [ "graphical.target" ];
