@@ -6,7 +6,7 @@
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
-     vim fish git gnupg firefox kitty python38 nodejs yarn rofi jq starship bitwarden-cli keyutils pass xclip syncthing albert bitwarden gnome3.gnome-tweak-tool gnome3.dconf-editor slack wireguard-tools busybox unzip signal-desktop go mosh bind weechat teams gcc gnumake chrome-gnome-shell ansible python38Packages.binwalk file patchelf nix-index autoPatchelfHook _1password-gui ungoogled-chromium wavebox python38Packages.pip maim sxhkd desktop-file-utils libnotify
+     vim fish git gnupg firefox kitty python38 nodejs yarn rofi jq starship bitwarden-cli keyutils pass xclip syncthing albert bitwarden gnome3.gnome-tweak-tool gnome3.dconf-editor slack wireguard-tools busybox unzip signal-desktop go mosh bind weechat teams gcc gnumake chrome-gnome-shell ansible python38Packages.binwalk file patchelf nix-index autoPatchelfHook _1password-gui ungoogled-chromium wavebox python38Packages.pip maim sxhkd desktop-file-utils libnotify neofetch
   ];
 
   
@@ -84,10 +84,10 @@
   services.actkbd = {
     enable = true;
     bindings = [
-      { keys = [ 29 31 125 ]; events = [ "key" ]; command = "bwmenu"; }
-      { keys = [ 31 42 125 ]; events = [ "key" ]; command = "screenshot"; }
-      { keys = [ 57 125 ]; events = [ "key" ]; command = "albert show "; }
-      { keys = [ 20 29 56 ]; events = [ "key" ]; command = "kitty"; }
+      { keys = [ 29 31 125 ]; events = [ "key" ]; command = "/home/heywoodlh/.local/bin/bwmenu"; }
+      { keys = [ 31 42 125 ]; events = [ "key" ]; command = "/home/heywoodlh/.local/bin/scripts/screenshot"; }
+      { keys = [ 57 125 ]; events = [ "key" ]; command = ''${pkgs.albert}/bin/albert show''; }
+      { keys = [ 20 29 56 ]; events = [ "key" ]; command = ''${pkgs.kitty}/bin/kitty''; }
     ];
   };
 
