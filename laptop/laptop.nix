@@ -22,7 +22,40 @@
       enable = true;
     };
     displayManager.gdm.enable = true;
-    desktopManager.gnome3.enable = true;
+    desktopManager.gnome3 = {
+      enable = true;
+      extraGSettingsOverridePackages = with pkgs; [ gnome3.gnome-settings-daemon ];
+      extraGSettingsOverrides = ''
+      [org.gnome.settings-daemon.plugins.media-keys]
+      custom-keybindings=[
+        '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/'
+	'/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/'
+	'/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/'
+	'/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/'
+      ]
+
+
+      [org.gnome.settings-daemon.plugins.media-keys.custom-keybindings.custom0]
+      binding='<Ctrl><Alt>t'
+      command='kitty'
+      name='Open terminal'
+
+      [org.gnome.settings-daemon.plugins.media-keys.custom-keybindings.custom1]
+      binding='<Ctrl><Super>s'
+      command='/home/heywoodlh/.local/bin/bwmenu'
+      name='Bitwarden Menu'
+
+      [org.gnome.settings-daemon.plugins.media-keys.custom-keybindings.custom2]
+      binding='<Super><Shift>s'
+      command='/home/heywoodlh/.local/bin/scripts/screenshot'
+      name='Screenshot'
+      
+      [org.gnome.settings-daemon.plugins.media-keys.custom-keybindings.custom3]
+      binding='<Super><Space>'
+      command='albert show'
+      name='Albert Launcher'
+    '';
+    };
   };
 
   programs.fish.enable = true;
