@@ -12,7 +12,7 @@ in {
   nixpkgs.config.allowUnfree = true;
   
   environment.systemPackages = with pkgs; [
-    vim git gnupg python38 jq starship pass slack wireguard-tools busybox unzip go mosh bind gcc gnumake ansible file patchelf nix-index autoPatchelfHook python38Packages.pip bash-completion
+    vim git gnupg python38 jq starship pass wireguard-tools busybox unzip go mosh bind gcc gnumake ansible file patchelf nix-index autoPatchelfHook python38Packages.pip bash-completion
   ];
  
   virtualisation = {
@@ -23,11 +23,11 @@ in {
   
   users.users.${user} = {
     isNormalUser = true;
-    uid = ${user_uid};
+    uid = user_uid;
     home = "/home/${user}";
-    description = "${user_name}";
+    description = user_name;
     extraGroups = [ "wheel" ];
     shell = pkgs.bash;
-    openssh.authorizedKeys.keys = [ "${user_ssh_authorized_key}" ];
+    openssh.authorizedKeys.keys = user_ssh_authorized_keys;
   };
 }
