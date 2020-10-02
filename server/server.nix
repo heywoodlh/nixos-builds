@@ -28,6 +28,6 @@ in {
     description = "${user_name}";
     extraGroups = [ "wheel" ];
     shell = pkgs.bash;
-    openssh.authorizedKeys.keys = [ "${ssh_authorized_key}" ];
+    openssh.authorizedKeys.keys = [ "${user_ssh_authorized_key}" ];
   };
 }
