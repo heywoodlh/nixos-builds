@@ -19,8 +19,6 @@ in {
     docker.enable = true;
   };
 
-  programs.bash.enable = true;
-  
   users.users.${user} = {
     isNormalUser = true;
     uid = user_uid;
