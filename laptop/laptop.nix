@@ -6,7 +6,7 @@
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
-     vim fish git gnupg firefox kitty python38 nodejs yarn rofi jq starship bitwarden-cli keyutils pass xclip syncthing albert bitwarden gnome3.gnome-tweak-tool gnome3.dconf-editor slack wireguard-tools busybox unzip signal-desktop go mosh bind weechat teams gcc gnumake chrome-gnome-shell ansible python38Packages.binwalk file patchelf nix-index autoPatchelfHook _1password-gui ungoogled-chromium wavebox python38Packages.pip maim sxhkd desktop-file-utils libnotify neofetch hydroxide youtube-dl
+     vim fish git gnupg firefox kitty python38 nodejs yarn rofi jq starship bitwarden-cli keyutils pass xclip syncthing albert bitwarden gnome3.gnome-tweak-tool gnome3.dconf-editor slack wireguard-tools busybox unzip signal-desktop go mosh bind weechat teams gcc gnumake chrome-gnome-shell ansible python38Packages.binwalk file patchelf nix-index autoPatchelfHook _1password-gui ungoogled-chromium wavebox python38Packages.pip maim sxhkd desktop-file-utils libnotify neofetch hydroxide youtube-dl gnomeExtensions.dash-to-dock qemu-utils keynav xdotool home-manager
   ];
 
   
@@ -105,23 +105,14 @@
       shell = pkgs.fish;
   };
 
+  nix.allowedUsers = [ "heywoodlh" ];
+
   services = {
     syncthing = {
       enable = true;
       user = "heywoodlh";
       dataDir = "/home/heywoodlh/Sync";
       configDir = "/home/heywoodlh/.config/syncthing";
-    };
-  };
-
-  systemd.user.services = {
-    hydroxide = {
-      description = "Hydroxide";
-      serviceConfig = {
-        ExecStart = "${pkgs.hydroxide}/bin/hydroxide serve";
-      };
-      enable = true;
-      wantedBy = [ "multi-user.target" ];
     };
   };
 }
