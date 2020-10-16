@@ -3,9 +3,11 @@
 
 Setup:
 
-1. [Install nix-darwin](https://github.com/LnL7/nix-darwin#install)
+1. [Install nix]()
 
-2. Remove the default `~/.nixpkgs` and replace with this repo:
+2. [Install nix-darwin](https://github.com/LnL7/nix-darwin#install)
+
+3. Remove the default `~/.nixpkgs` and replace with this repo:
 
 ```bash
 rm -rf ~/.nixpkgs
@@ -14,7 +16,7 @@ mkdir -p ~/opt &&\
 	ln -s ~/opt/nixos-builds/darwin ~/.nixpkgs
 ```
 
-3. Install:
+4. Install:
 
 ```bash
 darwin-rebuild switch -I "darwin-config=$HOME/opt/nixos-builds/darwin/darwin-configuration.nix"
