@@ -14,6 +14,8 @@ let
     gnupg
     pinentry
     pinentry-curses
+    python3.8
+    python3.8-pip
     m-cli
     gcc
     git
