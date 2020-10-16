@@ -17,5 +17,5 @@ mkdir -p ~/opt &&\
 3. Install:
 
 ```bash
-darwin-rebuild switch
+darwin-rebuild switch -I "darwin-config=$HOME/opt/nixos-builds/darwin/darwin-configuration.nix"
 ```
