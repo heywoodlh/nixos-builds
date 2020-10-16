@@ -5,7 +5,6 @@
     ./homebrew.nix
     ./system-defaults.nix
     ./network.nix
-    ./keyboard.nix
     ./wm.nix
     ./config.nix
   ];
