@@ -62,7 +62,6 @@ let
     "iterm2"
     "kitty"
     "knockknock"
-    "microsoft-remote-desktop-beta"
     "netiquette"
     "oversight"
     "plex"
@@ -82,15 +81,9 @@ let
     "yubico-yubikey-manager"
     "yubico-yubikey-personalization-gui"
   ];
-  system_packages = [
-    "coreutils"
-    "gnupg"
-  ];
 in {
   nix.package = pkgs.nix;
   nixpkgs.config.allowUnfree = true;
-
-  environment.systemPackages = with pkgs; system_packages;
 
   homebrew = {
     enable = true;
