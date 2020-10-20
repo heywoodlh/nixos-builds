@@ -39,8 +39,6 @@
        AppleInterfaceStyle = "Dark"; # set dark mode
        AppleKeyboardUIMode = 3;
        ApplePressAndHoldEnabled = false;
-       InitialKeyRepeat = 10;
-       KeyRepeat = 1;
        NSAutomaticCapitalizationEnabled = false;
        NSAutomaticDashSubstitutionEnabled = false;
        NSAutomaticPeriodSubstitutionEnabled = false;
