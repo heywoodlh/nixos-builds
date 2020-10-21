@@ -6,42 +6,41 @@ let
   user_shell = "fish";
   user_description = "Spencer Heywood";
   user_packages = [
-    "vim"
-    "pass"
-    "coreutils"
-    "jq"
-    "hydroxide"
-    "gnupg"
-    "pinentry"
-    "pinentry-curses"
-    "python3.8"
-    "python38Packages.pip"
-    "m-cli"
-    "gcc"
-    "git"
-    "go"
-    "neofetch"
-    "starship"
-    "telnet"
-    "tmux"
-    "tor"
-    "torsocks"
-    "wine"
-    "winetricks"
-    "wireguard-tools"
-    "scdoc"
-    "syncthing"
-    "skhd"
-    "yabai"
-    "ansible"
-    "ffmpeg"
-    "mpv"
-    "github-cli"
-    "dos2unix"
-    "bitwarden-cli"
-    "fzf"
-    "mosh"
-    "pwgen-secure"
+    pkgs.vim
+    pkgs.pass
+    pkgs.coreutils
+    pkgs.jq
+    pkgs.hydroxide
+    pkgs.gnupg
+    pkgs.pinentry
+    pkgs.pinentry-curses
+    pkgs.python3.8
+    pkgs.python38Packages.pip
+    pkgs.m-cli
+    pkgs.gcc
+    pkgs.git
+    pkgs.go
+    pkgs.neofetch
+    pkgs.starship
+    pkgs.telnet
+    pkgs.tmux
+    pkgs.tor
+    pkgs.torsocks
+    pkgs.wireguard-tools
+    pkgs.scdoc
+    pkgs.syncthing
+    pkgs.skhd
+    pkgs.yabai
+    pkgs.ansible
+    pkgs.ffmpeg
+    pkgs.mpv
+    pkgs.github-cli
+    pkgs.dos2unix
+    pkgs.bitwarden-cli
+    pkgs.fzf
+    pkgs.mosh
+    pkgs.pwgen-secure
+    pkgs.glow
   ];
   user_brew_formulae = [
     "choose-gui"
@@ -104,5 +103,6 @@ in {
     home = "/Users/${user_name}";
     name = "${user_full_name}";
     shell = pkgs.${user_shell};
+    packages = user_packages;
   };
 }
