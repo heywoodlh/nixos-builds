@@ -14,7 +14,7 @@ let
     pkgs.gnupg
     pkgs.pinentry
     pkgs.pinentry-curses
-    pkgs.python3.8
+    pkgs.python38
     pkgs.python38Packages.pip
     pkgs.m-cli
     pkgs.gcc
@@ -40,7 +40,13 @@ let
     pkgs.fzf
     pkgs.mosh
     pkgs.pwgen-secure
+    pkgs.pwgen
     pkgs.glow
+    pkgs.todo-txt-cli
+    pkgs.screen
+    pkgs.openssh
+    pkgs.weechat
+    pkgs.tcpdump
   ];
   user_brew_formulae = [
     "choose-gui"
@@ -96,7 +102,6 @@ in {
   programs.nix-index.enable = true;
   
   programs.${user_shell}.enable = true;
-  programs.gnupg.agent.enable = true;
 
   users.users.${user_name} = {
     description = "${user_description}";
