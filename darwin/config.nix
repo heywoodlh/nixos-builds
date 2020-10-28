@@ -51,6 +51,7 @@ let
   user_brew_formulae = [
     "choose-gui"
     "dnscrypt-proxy"
+    "mas"
   ];
   user_brew_casks = [
     "osxfuse"
@@ -74,6 +75,7 @@ let
     "ransomwhere"
     "reikey"
     "rocket-chat"
+    "secretive"
     "signal"
     "slack"
     "syncthing"
