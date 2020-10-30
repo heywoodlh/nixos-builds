@@ -47,6 +47,7 @@ let
     pkgs.openssh
     pkgs.weechat
     pkgs.tcpdump
+    pkgs.htop
   ];
   user_brew_formulae = [
     "choose-gui"
@@ -55,6 +56,7 @@ let
   ];
   user_brew_casks = [
     "osxfuse"
+    "altserver"
     "1password"
     "bitwarden"
     "blockblock"
