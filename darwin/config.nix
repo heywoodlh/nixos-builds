@@ -77,7 +77,6 @@ let
     "pock"
     "ransomwhere"
     "reikey"
-    "rocket-chat"
     "secretive"
     "signal"
     "slack"
