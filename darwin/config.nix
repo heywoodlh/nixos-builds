@@ -65,6 +65,7 @@ let
     "docker"
     "dropbox"
     "eloston-chromium"
+    "ferdi"
     "firefox"
     "firefox-developer-edition"
     "iterm2"
