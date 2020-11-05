@@ -45,6 +45,7 @@ let
     pkgs.todo-txt-cli
     pkgs.screen
     pkgs.openssh
+    pkgs.sshpass
     pkgs.weechat
     pkgs.tcpdump
     pkgs.htop
