@@ -49,6 +49,7 @@ let
     pkgs.weechat
     pkgs.tcpdump
     pkgs.htop
+    pkgs.gnumeric
   ];
   user_brew_formulae = [
     "choose-gui"
