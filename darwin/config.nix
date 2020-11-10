@@ -56,11 +56,11 @@ let
     "choose-gui"
     "dnscrypt-proxy"
     "mas"
-    "android-platform-tools"
   ];
   user_brew_casks = [
     "osxfuse"
     "altserver"
+    "android-platform-tools"
     "1password"
     "bitwarden"
     "blockblock"
