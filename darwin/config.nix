@@ -50,6 +50,7 @@ let
     pkgs.tcpdump
     pkgs.htop
     pkgs.gnumeric
+    pkgs.vagrant
   ];
   user_brew_formulae = [
     "choose-gui"
@@ -95,6 +96,7 @@ let
 in {
   nix.package = pkgs.nix;
   nixpkgs.config.allowUnfree = true;
+  programs.nix-index.enable = true;
 
   homebrew = {
     enable = true;
