@@ -56,6 +56,7 @@ let
     "choose-gui"
     "dnscrypt-proxy"
     "mas"
+    "android-platform-tools"
   ];
   user_brew_casks = [
     "osxfuse"
@@ -96,7 +97,6 @@ let
 in {
   nix.package = pkgs.nix;
   nixpkgs.config.allowUnfree = true;
-  programs.nix-index.enable = true;
 
   homebrew = {
     enable = true;
