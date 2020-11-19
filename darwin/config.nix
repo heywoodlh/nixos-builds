@@ -68,6 +68,7 @@ let
     "do-not-disturb"
     "docker"
     "dropbox"
+    "element"
     "eloston-chromium"
     "ferdi"
     "firefox"
