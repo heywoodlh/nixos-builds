@@ -201,6 +201,9 @@ in {
     cmd - return : /Applications/Kitty.app/Contents/MacOS/kitty --single-instance -d ~
     ctrl + alt - t : /Applications/Kitty.app/Contents/MacOS/kitty --single-instance -d ~
 
+    # lock screen
     cmd - l : /System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend
+   
+    ctrl + cmd - b : zsh -c "fish -c battpop"
   '';
 }
