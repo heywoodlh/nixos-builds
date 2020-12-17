@@ -205,5 +205,6 @@ in {
     cmd - l : /System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend
    
     ctrl + cmd - b : zsh -c "fish -c battpop"
+    ctrl + cmd - d : zsh -c "fish -c timepop"
   '';
 }
