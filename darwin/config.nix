@@ -73,6 +73,7 @@ let
     "ferdi"
     "firefox"
     "firefox-developer-edition"
+    "hiddenbar"
     "iterm2"
     "kitty"
     "knockknock"
