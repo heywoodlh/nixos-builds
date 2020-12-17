@@ -6,7 +6,7 @@
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
-     vim fish git gnupg firefox kitty python38 nodejs yarn rofi jq starship bitwarden-cli keyutils pass xclip syncthing albert bitwarden gnome3.gnome-tweak-tool gnome3.dconf-editor slack wireguard-tools busybox unzip signal-desktop go mosh bind weechat teams gcc gnumake chrome-gnome-shell ansible python38Packages.binwalk file patchelf nix-index autoPatchelfHook _1password-gui ungoogled-chromium wavebox python38Packages.pip maim sxhkd desktop-file-utils libnotify neofetch hydroxide youtube-dl gnomeExtensions.dash-to-dock qemu-utils keynav xdotool home-manager
+     vim fish git gnupg firefox kitty python38 nodejs yarn rofi jq starship bitwarden-cli keyutils pass xclip syncthing albert bitwarden gnome3.gnome-tweak-tool gnome3.dconf-editor wireguard-tools busybox unzip go mosh bind weechat gcc gnumake chrome-gnome-shell ansible python38Packages.binwalk python38Packages.setuptools file patchelf nix-index autoPatchelfHook _1password-gui wavebox python38Packages.pip maim sxhkd desktop-file-utils libnotify neofetch hydroxide youtube-dl gnomeExtensions.dash-to-dock qemu-utils keynav xdotool home-manager peru veracrypt pinentry-curses
   ];
 
   
@@ -70,8 +70,11 @@
     };
   };
   
-
   services = {
+    unclutter = {
+      enable = true;
+      timeout = 10;
+    };
     dnscrypt-proxy2 = {
       enable = true;
       settings = {
