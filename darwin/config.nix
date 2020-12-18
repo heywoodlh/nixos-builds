@@ -65,6 +65,7 @@ let
     "bitwarden"
     "blockblock"
     "caffeine"
+    "dmenu-mac"
     "do-not-disturb"
     "docker"
     "dropbox"
