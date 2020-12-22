@@ -14,8 +14,8 @@ let
     pkgs.gnupg
     pkgs.pinentry
     pkgs.pinentry-curses
-    pkgs.python38
-    pkgs.python38Packages.pip
+    pkgs.python39
+    pkgs.python39Packages.pip
     pkgs.m-cli
     pkgs.gcc
     pkgs.git
