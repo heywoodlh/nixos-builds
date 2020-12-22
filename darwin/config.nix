@@ -21,7 +21,6 @@ let
     pkgs.git
     pkgs.go
     pkgs.neofetch
-    pkgs.starship
     pkgs.telnet
     pkgs.tmux
     pkgs.tor
@@ -45,12 +44,9 @@ let
     pkgs.todo-txt-cli
     pkgs.screen
     pkgs.openssh
-    pkgs.sshpass
     pkgs.weechat
     pkgs.tcpdump
     pkgs.htop
-    pkgs.gnumeric
-    pkgs.vagrant
   ];
   user_brew_formulae = [
     "choose-gui"
@@ -59,7 +55,6 @@ let
   ];
   user_brew_casks = [
     "osxfuse"
-    "altserver"
     "android-platform-tools"
     "1password"
     "bitwarden"
@@ -70,10 +65,7 @@ let
     "docker"
     "dropbox"
     "element"
-    "eloston-chromium"
-    "ferdi"
     "firefox"
-    "firefox-developer-edition"
     "hiddenbar"
     "iterm2"
     "kitty"
@@ -89,13 +81,9 @@ let
     "slack"
     "syncthing"
     "tor-browser"
-    "tunnelblick"
     "veracrypt"
-    "vmware-fusion"
     "vnc-viewer"
     "whatsyoursign"
-    "yubico-yubikey-manager"
-    "yubico-yubikey-personalization-gui"
   ];
 in {
   nix.package = pkgs.nix;
