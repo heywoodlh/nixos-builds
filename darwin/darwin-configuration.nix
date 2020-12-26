@@ -6,7 +6,7 @@
     ./system-defaults.nix
     ./network.nix
     ./wm.nix
-    ./config.nix
+    ./mac-config.nix
   ];
 
   #Auto upgrade nix package and the daemon service.

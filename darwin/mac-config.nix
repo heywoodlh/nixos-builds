@@ -47,6 +47,7 @@ let
     pkgs.weechat
     pkgs.tcpdump
     pkgs.htop
+    pkgs.nodejs
   ];
   user_brew_formulae = [
     "choose-gui"
@@ -70,6 +71,7 @@ let
     "iterm2"
     "kitty"
     "knockknock"
+    "lulu"
     "netiquette"
     "oversight"
     "plex"
