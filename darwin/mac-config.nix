@@ -3,7 +3,6 @@
 let
   user_name = "heywoodlh";
   user_full_name = "Spencer Heywood";
-  user_shell = "fish";
   user_description = "Spencer Heywood";
   user_packages = [
     pkgs.vim
@@ -48,6 +47,7 @@ let
     pkgs.tcpdump
     pkgs.htop
     pkgs.nodejs
+    pkgs.tree
   ];
   user_brew_formulae = [
     "choose-gui"
@@ -86,6 +86,7 @@ let
     "veracrypt"
     "vnc-viewer"
     "whatsyoursign"
+    "zoomus"
   ];
 in {
   nix.package = pkgs.nix;
@@ -102,13 +103,10 @@ in {
   services.nix-daemon.enable = true;
   programs.nix-index.enable = true;
   
-  programs.${user_shell}.enable = true;
-
   users.users.${user_name} = {
     description = "${user_description}";
     home = "/Users/${user_name}";
     name = "${user_full_name}";
-    shell = pkgs.${user_shell};
     packages = user_packages;
   };
 }
