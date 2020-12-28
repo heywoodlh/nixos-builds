@@ -5,7 +5,7 @@ let
 in {
   services.yabai.enable = true;
   services.yabai.package = pkgs.yabai;
-  services.yabai.enableScriptingAddition = false;
+  services.yabai.enableScriptingAddition = true;
   services.yabai.extraConfig = ''
     yabai -m config status_bar                   off
     yabai -m config status_bar_text_font         "Helvetica Neue:Bold:12.0"
