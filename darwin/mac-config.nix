@@ -5,49 +5,49 @@ let
   user_full_name = "Spencer Heywood";
   user_description = "Spencer Heywood";
   user_packages = [
-    pkgs.vim
-    pkgs.pass
+    pkgs.ansible
+    pkgs.bitwarden-cli
     pkgs.coreutils
-    pkgs.jq
-    pkgs.hydroxide
-    pkgs.gnupg
-    pkgs.pinentry
-    pkgs.pinentry-curses
-    pkgs.python39
-    pkgs.python39Packages.pip
-    pkgs.m-cli
+    pkgs.dos2unix
+    pkgs.ffmpeg
+    pkgs.fzf
     pkgs.gcc
     pkgs.git
+    pkgs.github-cli
+    pkgs.glow
+    pkgs.gnupg
     pkgs.go
+    pkgs.htop
+    pkgs.hydroxide
+    pkgs.jq
+    pkgs.m-cli
+    pkgs.mosh
+    pkgs.mpv
     pkgs.neofetch
+    pkgs.nodejs
+    pkgs.openssh
+    pkgs.pass
+    pkgs.pinentry
+    pkgs.pinentry-curses
+    pkgs.pwgen
+    pkgs.pwgen-secure
+    pkgs.python39
+    pkgs.python39Packages.pip
+    pkgs.scdoc
+    pkgs.screen
+    pkgs.skhd
+    pkgs.syncthing
+    pkgs.tcpdump
     pkgs.telnet
     pkgs.tmux
+    pkgs.todo-txt-cli
     pkgs.tor
     pkgs.torsocks
-    pkgs.wireguard-tools
-    pkgs.scdoc
-    pkgs.syncthing
-    pkgs.skhd
-    pkgs.yabai
-    pkgs.ansible
-    pkgs.ffmpeg
-    pkgs.mpv
-    pkgs.github-cli
-    pkgs.dos2unix
-    pkgs.bitwarden-cli
-    pkgs.fzf
-    pkgs.mosh
-    pkgs.pwgen-secure
-    pkgs.pwgen
-    pkgs.glow
-    pkgs.todo-txt-cli
-    pkgs.screen
-    pkgs.openssh
-    pkgs.weechat
-    pkgs.tcpdump
-    pkgs.htop
-    pkgs.nodejs
     pkgs.tree
+    pkgs.vim
+    pkgs.weechat
+    pkgs.wireguard-tools
+    pkgs.yabai
   ];
   user_brew_formulae = [
     "choose-gui"
