@@ -43,6 +43,7 @@ in {
     yabai -m config left_padding                 20
     yabai -m config right_padding                20
     yabai -m config window_gap                   10
+    yabai -m rule --add app="choose" manage=off
   '';
 
   services.skhd.enable = true;
@@ -195,16 +196,17 @@ in {
     ctrl + cmd - p ; passthrough
     passthrough < ctrl + cmd - p ; default
 
-    ctrl + cmd - s : /Users/heywoodlh/.choose-scripts/bwmenu
+    ctrl + cmd - s : $HOME/.choose-scripts/bwmenu
 
     # open terminal
-    cmd - return : /Applications/Kitty.app/Contents/MacOS/kitty --single-instance -d ~
-    ctrl + alt - t : /Applications/Kitty.app/Contents/MacOS/kitty --single-instance -d ~
+    cmd - return : open -a alacritty
+    ctrl + alt - t : open -a alacritty
 
     # lock screen
     cmd - l : /System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend
    
     ctrl + cmd - b : zsh -c "fish -c battpop"
     ctrl + cmd - d : zsh -c "fish -c timepop"
+
   '';
 }
