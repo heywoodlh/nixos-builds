@@ -18,7 +18,7 @@ in {
     yabai -m config status_bar_clock_icon        
 
     yabai -m config mouse_follows_focus          off
-    yabai -m config focus_follows_mouse          off
+    yabai -m config focus_follows_mouse          on
     yabai -m config window_placement             second_child
     yabai -m config window_topmost               off
     yabai -m config window_opacity               off
