@@ -208,5 +208,7 @@ in {
     ctrl + cmd - b : zsh -c "fish -c battpop"
     ctrl + cmd - d : zsh -c "fish -c timepop"
 
+    ctrl + cmd - w : zsh -c "fish -c wifi-toggle"
+
   '';
 }
