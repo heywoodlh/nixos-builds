@@ -211,6 +211,7 @@ in {
     ctrl + cmd - w : zsh -c "fish -c wifi-toggle"
 
     cmd - space : zsh -c "bash ~/.local/bin/choose-launcher.sh"
+    cmd + shift - f : zsh -c "bash ~/.local/bin/choose-file-manager.sh"
 
   '';
 }
