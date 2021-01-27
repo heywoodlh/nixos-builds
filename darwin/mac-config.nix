@@ -76,6 +76,7 @@ let
     "oversight"
     "plex"
     "pock"
+    "qutebrowser"
     "ransomwhere"
     "reikey"
     "secretive"
