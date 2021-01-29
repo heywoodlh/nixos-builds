@@ -58,6 +58,7 @@ let
     "osxfuse"
     "android-platform-tools"
     "1password"
+    "balenaetcher"
     "bitwarden"
     "blockblock"
     "caffeine"
