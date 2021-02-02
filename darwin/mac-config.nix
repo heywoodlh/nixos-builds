@@ -6,6 +6,7 @@ let
   user_description = "Spencer Heywood";
   user_packages = [
     pkgs.ansible
+    pkgs.buku
     pkgs.bitwarden-cli
     pkgs.coreutils
     pkgs.dos2unix
