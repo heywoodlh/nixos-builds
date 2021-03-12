@@ -113,12 +113,12 @@ in {
     shift + cmd - 0 : yabai -m window --space 10; yabai -m space --focus 10
 
     # focus monitor
-    ctrl + alt - x  : yabai -m display --focus recent
-    ctrl + alt - z  : yabai -m display --focus prev
-    ctrl + alt - c  : yabai -m display --focus next
-    ctrl + alt - 1  : yabai -m display --focus 1
-    ctrl + alt - 2  : yabai -m display --focus 2
-    ctrl + alt - 3  : yabai -m display --focus 3
+    #ctrl + alt - x  : yabai -m display --focus recent
+    #ctrl + alt - z  : yabai -m display --focus prev
+    #ctrl + alt - c  : yabai -m display --focus next
+    #ctrl + alt - 1  : yabai -m display --focus 1
+    #ctrl + alt - 2  : yabai -m display --focus 2
+    #ctrl + alt - 3  : yabai -m display --focus 3
 
 
     # move window
@@ -140,10 +140,10 @@ in {
     #shift + cmd - d : yabai -m window --resize right:-20:0
 
     # set insertion point in focused container
-    ctrl + alt - h : yabai -m window --insert west
-    ctrl + alt - j : yabai -m window --insert south
-    ctrl + alt - k : yabai -m window --insert north
-    ctrl + alt - l : yabai -m window --insert east
+    #ctrl + alt - h : yabai -m window --insert west
+    #ctrl + alt - j : yabai -m window --insert south
+    #ctrl + alt - k : yabai -m window --insert north
+    #ctrl + alt - l : yabai -m window --insert east
 
     # rotate tree
     alt - r : yabai -m space --rotate 90
@@ -188,8 +188,8 @@ in {
               yabai -m window --grid 5:5:4:0:1:1
 
     # change layout of desktop
-    ctrl + alt - a : yabai -m space --layout bsp
-    ctrl + alt - d : yabai -m space --layout float
+    #ctrl + alt - a : yabai -m space --layout bsp
+    #ctrl + alt - d : yabai -m space --layout float
 
     # Custom stuff
     :: passthrough

@@ -89,7 +89,6 @@ let
     "veracrypt"
     "vnc-viewer"
     "whatsyoursign"
-    "zoomus"
   ];
 in {
   nix.package = pkgs.nix;
@@ -97,8 +96,10 @@ in {
 
   homebrew = {
     enable = true;
-    formulae = user_brew_formulae;
-    cask_args.appdir = "/Users/${user_name}/Applications";
+    brews = user_brew_formulae;
+    extraConfig = ''
+      cask_args appdir: "~/Applications"
+    '';
     casks = user_brew_casks;
   };
  

@@ -2,7 +2,6 @@
 
 {
   imports = [
-    ./homebrew.nix
     ./system-defaults.nix
     ./network.nix
     ./wm.nix
