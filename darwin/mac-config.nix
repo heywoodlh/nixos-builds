@@ -5,7 +5,7 @@
   services.nix-daemon.enable = true;
   programs.nix-index.enable = true;
 
-  security.pam = import ./darwin/modules/security/pam.nix;
+  security.pam = import ./modules/security/pam.nix;
   security.pam.enableSudoTouchIdAuth = true;
 
   environment.shells = with pkgs; [
