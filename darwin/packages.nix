@@ -73,6 +73,8 @@ let
     "caffeine"
     "dmenu-mac"
     "do-not-disturb"
+    "docker"
+    "element"
     "firefox"
     "hiddenbar"
     "kitty"
