@@ -30,7 +30,7 @@
      };
      # Apple firewall config:
      alf = {
-       globalstate = 2;
+       globalstate = 1;
        loggingenabled = 0;
        stealthenabled = 1;
      };
