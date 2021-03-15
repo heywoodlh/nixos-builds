@@ -3,6 +3,7 @@
 {
   imports = [
     ./system-defaults.nix
+    ./modules/security/pam.nix
     ./network.nix
     ./wm.nix
     ./mac-config.nix
