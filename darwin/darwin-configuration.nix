@@ -6,8 +6,10 @@
     ./network.nix
     ./wm.nix
     ./mac-config.nix
+    ./packages.nix
+    ./users.nix
   ];
-
+  
   #Auto upgrade nix package and the daemon service.
   services.nix-daemon.enable = true;
 

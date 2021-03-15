@@ -5,7 +5,6 @@
     enableKeyMapping = true;
     remapCapsLockToControl = true;
   };
-
   system.defaults = {
      dock = {
        autohide = true;
@@ -17,6 +16,7 @@
        tilesize = 48;
        static-only = true;
        mru-spaces = false;
+       show-recents = false;
      };
      finder = {
        AppleShowAllExtensions = true;
@@ -26,14 +26,18 @@
      trackpad = {
        Clicking = true;
        TrackpadThreeFingerDrag = true;
+       Dragging = true;
      };
      # Apple firewall config:
      alf = {
-       globalstate = 2; # 2 = block all, 1 = enabled, 0 = disabled
-       loggingenabled = 0; # disabled
+       globalstate = 2;
+       loggingenabled = 0;
        stealthenabled = 1;
      };
-     loginwindow.GuestEnabled = false;
+     loginwindow = {
+       GuestEnabled = false;
+       DisableConsoleAccess = true;
+     };
      SoftwareUpdate.AutomaticallyInstallMacOSUpdates = true;
      NSGlobalDomain = {
        AppleInterfaceStyle = "Dark"; # set dark mode
@@ -46,7 +50,7 @@
        NSAutomaticSpellingCorrectionEnabled = false;
        NSNavPanelExpandedStateForSaveMode = true;
        NSNavPanelExpandedStateForSaveMode2 = true;
+       _HIHideMenuBar = true;
      };
    };
-  
 }
