@@ -71,7 +71,6 @@ let
     "bitwarden"
     "blockblock"
     "caffeine"
-    "cubicsdr"
     "do-not-disturb"
     "element"
     "firefox"
