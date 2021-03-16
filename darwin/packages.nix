@@ -55,6 +55,7 @@ let
     "dnscrypt-proxy"
     "librtlsdr"
     "mas"
+    "urh"
   ];
   user_brew_taps = [
     "homebrew/cask"
