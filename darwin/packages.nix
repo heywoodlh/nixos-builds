@@ -53,6 +53,7 @@ let
   user_brew_formulae = [
     "choose-gui"
     "dnscrypt-proxy"
+    "librtlsdr"
     "mas"
   ];
   user_brew_taps = [
