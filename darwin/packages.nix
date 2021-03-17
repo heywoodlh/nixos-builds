@@ -53,8 +53,12 @@ let
   user_brew_formulae = [
     "choose-gui"
     "dnscrypt-proxy"
+    "fish"
+    "harfbuzz"
+    "lcms2"
     "librtlsdr"
     "mas"
+    "tor"
     "urh"
   ];
   user_brew_taps = [
@@ -92,6 +96,7 @@ let
     "slack"
     "syncthing"
     "tor-browser"
+    "utm"
     "veracrypt"
     "vnc-viewer"
     "whatsyoursign"
@@ -99,6 +104,7 @@ let
   user_mas_apps = {
     DaisyDisk = 411643860;
     "WiFi Explorer" = 494803304;
+    WireGuard = 1451685025;
   };
 in {
   nix.package = pkgs.nix;
