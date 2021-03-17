@@ -99,6 +99,7 @@ let
     "utm"
     "veracrypt"
     "vnc-viewer"
+    "webex-meetings"
     "whatsyoursign"
   ];
   user_mas_apps = {
