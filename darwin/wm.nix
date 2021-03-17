@@ -199,8 +199,8 @@ in {
     ctrl + cmd - s : $HOME/.choose-scripts/bwmenu
 
     # open terminal
-    cmd - return : open -a kitty
-    ctrl + alt - t : open -a kitty
+    cmd - return : open -a alacritty
+    ctrl + alt - t : open -a alacritty
 
     # lock screen
     cmd - l : /System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend

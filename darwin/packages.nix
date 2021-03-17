@@ -59,6 +59,7 @@ let
     "librtlsdr"
     "mas"
     "screen"
+    "tmux"
     "tor"
     "urh"
   ];
@@ -71,7 +72,7 @@ let
     "homebrew/services"
   ];
   user_brew_casks = [
-    "osxfuse"
+    "alacritty"
     "android-platform-tools"
     "1password"
     "balenaetcher"
@@ -82,10 +83,10 @@ let
     "element"
     "firefox"
     "hiddenbar"
-    "kitty"
     "knockknock"
     "lulu"
     "netiquette"
+    "osxfuse"
     "oversight"
     "plex"
     "pock"
