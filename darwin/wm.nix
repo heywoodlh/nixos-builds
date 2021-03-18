@@ -200,7 +200,7 @@ in {
 
     # open terminal (disabled in favor of just using iTerm's hotkey stuff)
     #cmd - return : open -a iTerm.app
-    #ctrl + alt - t : open -a iTerm.app
+    ctrl + alt - t : osascript -e "tell application \"iTerm\" create window with profile \"Aerc\" end tell"
 
     # lock screen
     cmd - l : /System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend
