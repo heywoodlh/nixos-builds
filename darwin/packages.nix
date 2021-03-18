@@ -98,6 +98,7 @@ let
     "secretive"
     "signal"
     "slack"
+    "steam"
     "syncthing"
     "tor-browser"
     "utm"
