@@ -199,8 +199,8 @@ in {
     ctrl + cmd - s : $HOME/.choose-scripts/bwmenu
 
     # open terminal
-    cmd - return : open -a Terminal.app
-    ctrl + alt - t : open -a Terminal.app
+    cmd - return : open -a iTerm.app
+    ctrl + alt - t : open -a iTerm.app
 
     # lock screen
     cmd - l : /System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend
