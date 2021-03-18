@@ -73,7 +73,6 @@ let
     "homebrew/services"
   ];
   user_brew_casks = [
-    "alacritty"
     "android-platform-tools"
     "1password"
     "balenaetcher"
