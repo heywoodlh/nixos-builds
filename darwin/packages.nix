@@ -58,6 +58,7 @@ let
     "lcms2"
     "librtlsdr"
     "mas"
+    "mosh"
     "nativefier"
     "screen"
     "tmux"
