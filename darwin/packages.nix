@@ -106,6 +106,7 @@ let
     "vnc-viewer"
     "webex-meetings"
     "whatsyoursign"
+    "zoom"
   ];
   user_mas_apps = {
     DaisyDisk = 411643860;
