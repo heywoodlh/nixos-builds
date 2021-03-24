@@ -53,6 +53,7 @@ let
   user_brew_formulae = [
     "choose-gui"
     "dnscrypt-proxy"
+    "esolitos/ipa/sshpass"
     "fish"
     "harfbuzz"
     "lcms2"
@@ -72,6 +73,7 @@ let
     "homebrew/cask-versions"
     "homebrew/core"
     "homebrew/services"
+    "browsh-org/homebrew-browsh"
   ];
   user_brew_casks = [
     "android-platform-tools"
@@ -79,6 +81,7 @@ let
     "balenaetcher"
     "bitwarden"
     "blockblock"
+    "browsh"
     "caffeine"
     "cursorcerer"
     "do-not-disturb"
