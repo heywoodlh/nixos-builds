@@ -76,7 +76,6 @@ let
     "browsh-org/homebrew-browsh"
   ];
   user_brew_casks = [
-    "adobe-creative-cloud"
     "android-platform-tools"
     "1password"
     "balenaetcher"
@@ -92,7 +91,6 @@ let
     "knockknock"
     "lulu"
     "netiquette"
-    "openzfs"
     "osxfuse"
     "oversight"
     "plex"
@@ -100,6 +98,7 @@ let
     "qutebrowser"
     "ransomwhere"
     "reikey"
+    "screens"
     "secretive"
     "signal"
     "slack"
