@@ -51,11 +51,13 @@ let
     pkgs.yabai
   ];
   user_brew_formulae = [
+    "bash"
     "choose-gui"
     "dnscrypt-proxy"
     "esolitos/ipa/sshpass"
     "fish"
     "harfbuzz"
+    "jailkit"
     "lcms2"
     "librtlsdr"
     "mas"
@@ -76,6 +78,7 @@ let
     "browsh-org/homebrew-browsh"
   ];
   user_brew_casks = [
+    "adobe-acrobat-pro"
     "android-platform-tools"
     "1password"
     "balenaetcher"
@@ -83,13 +86,17 @@ let
     "blockblock"
     "caffeine"
     "cursorcerer"
+    "discord"
     "do-not-disturb"
     "element"
     "firefox"
+    "font-iosevka"
     "hiddenbar"
+    "imazing"
     "iterm2"
     "knockknock"
     "lulu"
+    "microsoft-teams"
     "netiquette"
     "osxfuse"
     "oversight"
@@ -100,6 +107,7 @@ let
     "reikey"
     "screens"
     "secretive"
+    "shadow"
     "signal"
     "slack"
     "steam"
