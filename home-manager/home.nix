@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ./config.nix
+    ./home-config.nix
     ./wm.nix
   ];
 

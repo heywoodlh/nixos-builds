@@ -4,42 +4,33 @@ let
   username = "heywoodlh";
   homedir = "/home/${username}";
   user_packages = [
-    pkgs.albert
     pkgs.ansible
     pkgs.bitwarden
     pkgs.bitwarden-cli
     pkgs.coreutils
-    pkgs.dnscrypt-proxy2
+    pkgs.discord
     pkgs.dos2unix
-    pkgs.ferdi
     pkgs.ffmpeg
     pkgs.firefox
-    pkgs.fish
     pkgs.fzf
     pkgs.gcc
     pkgs.git
     pkgs.github-cli
-    pkgs.glow
-    pkgs.gnumeric
     pkgs.gnupg
     pkgs.go
     pkgs.htop
-    pkgs.hydroxide
     pkgs.jq
-    pkgs.kitty
     pkgs.maim
     pkgs.mesa
-    pkgs.mesa-utils
     pkgs.mosh
-    pkgs.mpv
     pkgs.neofetch
     pkgs.openssh
     pkgs.pass
     pkgs.pinentry
     pkgs.pinentry-curses
     pkgs.pwgen
-    pkgs.python38
-    pkgs.python38Packages.pip
+    pkgs.python39
+    pkgs.python39Packages.pip
     pkgs.rofi
     pkgs.scdoc
     pkgs.screen
@@ -47,13 +38,13 @@ let
     pkgs.syncthing
     pkgs.tcpdump
     pkgs.telnet
+    pkgs.terminator
     pkgs.tmux
     pkgs.todo-txt-cli
     pkgs.tor
     pkgs.torsocks
     pkgs.veracrypt
     pkgs.vim
-    pkgs.weechat
     pkgs.wireguard
     pkgs.xclip
   ];
