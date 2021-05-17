@@ -7,6 +7,7 @@ let
     pkgs.ansible
     pkgs.bitwarden
     pkgs.bitwarden-cli
+    pkgs.buku
     pkgs.coreutils
     pkgs.discord
     pkgs.dos2unix
@@ -16,6 +17,7 @@ let
     pkgs.gcc
     pkgs.git
     pkgs.github-cli
+    pkgs.gnomeExtensions.caffeine
     pkgs.gnupg
     pkgs.go
     pkgs.htop
