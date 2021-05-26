@@ -101,6 +101,7 @@ let
     "netiquette"
     "osxfuse"
     "oversight"
+    "pinentry-mac"
     "plex"
     "pock"
     "qutebrowser"
