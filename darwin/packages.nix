@@ -27,7 +27,6 @@ let
     pkgs.neofetch
     pkgs.nodejs
     pkgs.openssh
-    pkgs.pass
     pkgs.pinentry
     pkgs.pinentry-curses
     pkgs.pwgen
@@ -63,6 +62,8 @@ let
     "mas"
     "mosh"
     "nativefier"
+    "pass"
+    "pass-otp"
     "screen"
     "tmux"
     "tor"
