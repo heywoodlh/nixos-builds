@@ -92,6 +92,7 @@ let
     "do-not-disturb"
     "element"
     "firefox"
+    "firefox-developer-edition"
     "font-iosevka"
     "hiddenbar"
     "imazing"
