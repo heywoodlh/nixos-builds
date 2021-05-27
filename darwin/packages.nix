@@ -54,6 +54,7 @@ let
     "choose-gui"
     "dnscrypt-proxy"
     "esolitos/ipa/sshpass"
+    "findutils"
     "fish"
     "harfbuzz"
     "jailkit"
