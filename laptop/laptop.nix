@@ -39,11 +39,6 @@
       command='terminator'
       name='Open terminal'
 
-      [org.gnome.settings-daemon.plugins.media-keys.custom-keybindings.custom1]
-      binding='<Ctrl><Super>s'
-      command='/home/heywoodlh/.local/bin/bwmenu'
-      name='Bitwarden Menu'
-
       [org.gnome.settings-daemon.plugins.media-keys.custom-keybindings.custom3]
       binding='<Super><Space>'
       command='rofi -theme nord -show run -display-run "run: "'
@@ -70,6 +65,10 @@
   };
 
   programs.adb.enable = true;  
+
+  programs.firejail = {
+    enable = true;
+  };
 
   systemd.services.dnscrypt-proxy2.serviceConfig = {
     StateDirectory = "dnscrypt-proxy2";
