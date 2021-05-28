@@ -27,7 +27,6 @@ let
     pkgs.neofetch
     pkgs.nodejs
     pkgs.openssh
-    pkgs.pass
     pkgs.pinentry
     pkgs.pinentry-curses
     pkgs.pwgen
@@ -55,6 +54,7 @@ let
     "choose-gui"
     "dnscrypt-proxy"
     "esolitos/ipa/sshpass"
+    "findutils"
     "fish"
     "harfbuzz"
     "jailkit"
@@ -63,6 +63,8 @@ let
     "mas"
     "mosh"
     "nativefier"
+    "pass"
+    "pass-otp"
     "screen"
     "tmux"
     "tor"
@@ -90,6 +92,7 @@ let
     "do-not-disturb"
     "element"
     "firefox"
+    "firefox-developer-edition"
     "font-iosevka"
     "hiddenbar"
     "imazing"
@@ -100,6 +103,7 @@ let
     "netiquette"
     "osxfuse"
     "oversight"
+    "pinentry-mac"
     "plex"
     "pock"
     "qutebrowser"
