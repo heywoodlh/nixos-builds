@@ -5,7 +5,7 @@
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
-     vim git gnupg firefox terminator guake python39 nodejs yarn rofi jq bitwarden-cli keyutils pass xclip syncthing bitwarden gnome3.gnome-tweak-tool gnome3.dconf-editor wireguard-tools busybox unzip go mosh bind gcc gnumake chrome-gnome-shell ansible python39Packages.setuptools file patchelf nix-index autoPatchelfHook _1password-gui python39Packages.pip maim sxhkd desktop-file-utils libnotify neofetch gnomeExtensions.dash-to-dock qemu-utils keynav xdotool home-manager peru pinentry-curses coreutils nodePackages.typescript
+     vim git gnupg firefox terminator guake python39 nodejs yarn rofi jq bitwarden-cli keyutils pass pass-otp xclip syncthing bitwarden gnome3.gnome-tweak-tool gnome3.dconf-editor wireguard-tools busybox unzip go mosh bind gcc gnumake chrome-gnome-shell ansible python39Packages.setuptools file patchelf nix-index autoPatchelfHook _1password-gui python39Packages.pip maim sxhkd desktop-file-utils libnotify neofetch gnomeExtensions.dash-to-dock qemu-utils keynav xdotool home-manager peru pinentry-curses coreutils nodePackages.typescript
   ];
 
   
@@ -39,11 +39,6 @@
       command='terminator'
       name='Open terminal'
 
-      [org.gnome.settings-daemon.plugins.media-keys.custom-keybindings.custom1]
-      binding='<Ctrl><Super>s'
-      command='/home/heywoodlh/.local/bin/bwmenu'
-      name='Bitwarden Menu'
-
       [org.gnome.settings-daemon.plugins.media-keys.custom-keybindings.custom3]
       binding='<Super><Space>'
       command='rofi -theme nord -show run -display-run "run: "'
@@ -70,6 +65,10 @@
   };
 
   programs.adb.enable = true;  
+
+  programs.firejail = {
+    enable = true;
+  };
 
   systemd.services.dnscrypt-proxy2.serviceConfig = {
     StateDirectory = "dnscrypt-proxy2";
