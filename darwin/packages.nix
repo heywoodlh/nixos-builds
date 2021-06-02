@@ -5,8 +5,6 @@ let
   user_full_name = "Spencer Heywood";
   user_description = "Spencer Heywood";
   user_packages = [
-    pkgs.ansible
-    pkgs.buku
     pkgs.bitwarden-cli
     pkgs.coreutils
     pkgs.dos2unix
@@ -44,14 +42,15 @@ let
     pkgs.tor
     pkgs.torsocks
     pkgs.tree
-    pkgs.vim
-    pkgs.weechat
     pkgs.wireguard-tools
     pkgs.yabai
   ];
   user_brew_formulae = [
+    "ansible"
     "bash"
+    "buku"
     "choose-gui"
+    "coreutils"
     "dnscrypt-proxy"
     "esolitos/ipa/sshpass"
     "findutils"
@@ -59,6 +58,7 @@ let
     "harfbuzz"
     "jailkit"
     "lcms2"
+    "lfstat"
     "librtlsdr"
     "mas"
     "mosh"
@@ -69,6 +69,7 @@ let
     "tmux"
     "tor"
     "urh"
+    "vim"
   ];
   user_brew_taps = [
     "homebrew/cask"
@@ -117,6 +118,7 @@ let
     "steam"
     "syncthing"
     "tor-browser"
+    "ubersicht"
     "utm"
     "veracrypt"
     "vnc-viewer"

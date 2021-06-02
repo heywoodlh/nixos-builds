@@ -19,7 +19,7 @@ in {
 
     yabai -m config mouse_follows_focus          off
     yabai -m config focus_follows_mouse          on
-    yabai -m config window_placement             second_child
+    yabai -m config window_placement             first_child
     yabai -m config window_topmost               off
     yabai -m config window_opacity               off
     yabai -m config window_opacity_duration      0.0
@@ -38,7 +38,7 @@ in {
     yabai -m config mouse_action2                resize
     
     yabai -m config layout                       bsp
-    yabai -m config top_padding                  20
+    yabai -m config top_padding                  38
     yabai -m config bottom_padding               20
     yabai -m config left_padding                 20
     yabai -m config right_padding                20
@@ -205,8 +205,8 @@ in {
     # lock screen
     cmd - l : /System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend
    
-    ctrl + cmd - b : zsh -c "fish -c battpop"
-    ctrl + cmd - d : zsh -c "fish -c timepop"
+    ctrl + cmd - b : bash -c 'source ~/.bash.d/functions && battpop'
+    ctrl + cmd - d : bash -c 'source ~/.bash.d/functions && timepop
 
     ctrl + cmd - w : zsh -c "fish -c wifi-toggle"
 
