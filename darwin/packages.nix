@@ -65,6 +65,7 @@ let
     "nativefier"
     "pass"
     "pass-otp"
+    "pinentry-mac"
     "screen"
     "tmux"
     "tor"
@@ -98,13 +99,13 @@ let
     "hiddenbar"
     "imazing"
     "iterm2"
+    "ios-app-signer"
     "knockknock"
     "lulu"
     "microsoft-teams"
     "netiquette"
     "osxfuse"
     "oversight"
-    "pinentry-mac"
     "plex"
     "pock"
     "qutebrowser"
@@ -128,6 +129,7 @@ let
   ];
   user_mas_apps = {
     DaisyDisk = 411643860;
+    Vimari = 1480933944;
     "WiFi Explorer" = 494803304;
     WireGuard = 1451685025;
   };
