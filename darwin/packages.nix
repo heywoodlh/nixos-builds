@@ -129,6 +129,7 @@ let
   ];
   user_mas_apps = {
     DaisyDisk = 411643860;
+    "Save to Pocket" = 1477385213;
     Vimari = 1480933944;
     "WiFi Explorer" = 494803304;
     WireGuard = 1451685025;
