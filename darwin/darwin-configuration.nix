@@ -14,14 +14,11 @@
   #Auto upgrade nix package and the daemon service.
   services.nix-daemon.enable = true;
 
-  nix.extraOptions = {
-    extra-platforms = x86_64-darwin aarch64-darwin;
-  };
-
-  pkgsM1 = import <nixpkgs> { 
-    localSystem = "aarch64-darwin"; 
-  };
-  nix.pkg = pkgsM1.nix;
+  # M1 Support
+  nix.extraOptions = ''
+    extra-platforms = aarch64-darwin x86_64-darwin
+    experimental-features = nix-command flakes
+  '';
 
   system.stateVersion = 4;
 }

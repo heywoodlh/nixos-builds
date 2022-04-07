@@ -5,72 +5,53 @@ let
   user_full_name = "Spencer Heywood";
   user_description = "Spencer Heywood";
   user_packages = [
-    pkgs.bitwarden-cli
-    pkgs.coreutils
-    pkgs.dos2unix
-    pkgs.ffmpeg
-    pkgs.fzf
     pkgs.gcc
     pkgs.git
-    pkgs.github-cli
-    pkgs.glow
     pkgs.gnupg
-    pkgs.go
-    pkgs.htop
-    pkgs.hydroxide
-    pkgs.jq
-    pkgs.m-cli
-    pkgs.mosh
-    pkgs.mpv
-    pkgs.neofetch
-    pkgs.nodejs
-    pkgs.openssh
-    pkgs.pinentry
-    pkgs.pinentry-curses
-    pkgs.pwgen
-    pkgs.pwgen-secure
     pkgs.python39
     pkgs.python39Packages.pip
-    pkgs.scdoc
-    pkgs.screen
     pkgs.skhd
-    pkgs.syncthing
-    pkgs.tcpdump
-    pkgs.telnet
-    pkgs.tmux
-    pkgs.todo-txt-cli
-    pkgs.tor
-    pkgs.torsocks
-    pkgs.tree
     pkgs.wireguard-tools
     pkgs.yabai
   ];
   user_brew_formulae = [
     "ansible"
+    "aerc"
     "bash"
-    "buku"
     "choose-gui"
     "coreutils"
-    "dnscrypt-proxy"
-    "esolitos/ipa/sshpass"
+    "dos2unix"
+    "ffmpeg"
     "findutils"
-    "fish"
+    "fzf"
+    "gcc"
+    "gnupg"
+    "gh"
+    "git"
     "harfbuzz"
+    "htop"
     "jailkit"
-    "lcms2"
-    "lfstat"
-    "librtlsdr"
+    "jq"
+    "lima"
+    "m-cli"
     "mas"
+    "neofetch"
+    "node"
     "mosh"
-    "nativefier"
     "pass"
     "pass-otp"
     "pinentry-mac"
+    "pwgen"
+    "python"
     "screen"
+    "syncthing"
+    "tcpdump"
     "tmux"
     "tor"
-    "urh"
+    "torsocks"
+    "tree"
     "vim"
+    "zsh"
   ];
   user_brew_taps = [
     "homebrew/cask"
@@ -79,60 +60,47 @@ let
     "homebrew/cask-versions"
     "homebrew/core"
     "homebrew/services"
-    "browsh-org/homebrew-browsh"
   ];
   user_brew_casks = [
-    "adobe-acrobat-pro"
     "android-platform-tools"
-    "1password"
-    "balenaetcher"
+    "beeper"
+    "brave"
     "bitwarden"
     "blockblock"
     "caffeine"
+    "cliclick"
+    "curl"
     "cursorcerer"
-    "discord"
     "do-not-disturb"
-    "element"
-    "firefox"
-    "firefox-developer-edition"
     "font-iosevka"
     "hiddenbar"
-    "imazing"
     "iterm2"
-    "ios-app-signer"
     "knockknock"
     "lulu"
     "microsoft-teams"
+    "moonlight"
     "netiquette"
-    "osxfuse"
     "oversight"
     "plex"
-    "pock"
-    "qutebrowser"
     "ransomwhere"
+    "ripgrep"
     "reikey"
     "screens"
     "secretive"
     "shadow"
-    "signal"
     "slack"
-    "steam"
     "syncthing"
-    "tor-browser"
     "ubersicht"
-    "utm"
-    "veracrypt"
     "vnc-viewer"
-    "webex-meetings"
     "whatsyoursign"
+    "wireguard-go"
+    "wireguard-tools"
     "zoom"
   ];
   user_mas_apps = {
     DaisyDisk = 411643860;
-    "Save to Pocket" = 1477385213;
     Vimari = 1480933944;
     "WiFi Explorer" = 494803304;
-    WireGuard = 1451685025;
   };
 in {
   nix.package = pkgs.nix;
